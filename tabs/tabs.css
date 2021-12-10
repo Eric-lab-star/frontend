@@ -17,8 +17,6 @@ body {
   color: white;
 }
 
-.l,
-.p,
-.t {
+.l {
   display: none;
 }
