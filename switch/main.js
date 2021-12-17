@@ -8,7 +8,7 @@ function setWeather() {
 
   switch (choice) {
     case "sunny":
-      para.textContent =
+      para.innerText =
         "It is nice and sunny outside today. Wear shorts! Go to the beach, or the park, and get an ice cream.";
       break;
     case "rainy":
