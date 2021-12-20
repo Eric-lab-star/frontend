@@ -3,33 +3,30 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   height: 100vh;
   margin: 0px;
-  display: flex;
   background-color: black;
 }
 
 #sideNav {
+  width: 0;
   font-size: 20px;
   font-weight: 500;
   height: 100%;
   background-color: aquamarine;
-  animation: 1s ease-in-out slidein;
-}
-@keyframes slidein {
-  from {
-    margin-left: -20%;
-  }
-  to {
-    margin-left: 0px;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  overflow-x: hidden;
 }
 
-.close {
+.closeIcon {
   float: right;
   margin: 10px 10px;
   cursor: pointer;
 }
 
-.close:hover {
+.closeIcon:hover {
   color: white;
 }
 
@@ -64,4 +61,7 @@ button {
 button:hover {
   background-color: gray;
   color: white;
+}
+
+.showSideNav {
 }
