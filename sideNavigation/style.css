@@ -4,20 +4,30 @@ body {
   height: 100vh;
   margin: 0px;
   background-color: black;
+  overflow: hidden;
 }
 
 #sideNav {
-  width: 0;
+  width: 200px;
   font-size: 20px;
   font-weight: 500;
   height: 100%;
   background-color: aquamarine;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
+  position: absolute;
+}
 
-  overflow-x: hidden;
+.slideIn {
+  animation: slideIn 0.1s linear forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    left: -200px;
+  }
+
+  100% {
+    left: 0px;
+  }
 }
 
 .closeIcon {
@@ -28,6 +38,20 @@ body {
 
 .closeIcon:hover {
   color: white;
+}
+
+.close {
+  animation: close 0.1s linear forwards;
+}
+
+@keyframes close {
+  0% {
+    left: 0px;
+  }
+
+  100% {
+    left: -200px;
+  }
 }
 
 li {
@@ -61,4 +85,8 @@ button {
 button:hover {
   background-color: gray;
   color: white;
+}
+
+.push {
+  animation: push 1s linear forwards;
 }
