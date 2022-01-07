@@ -1,53 +1,40 @@
+@import "reset.css";
 body {
   background-color: black;
   color: white;
   width: 100%;
 }
 
-#nav {
-  background-color: gray;
+.navBar {
+  background-color: brown;
+  width: 100%;
   position: fixed;
   bottom: 0px;
-  width: 100%;
 }
-#nav div {
-  float: left;
-  padding: 14px 16px;
-  cursor: pointer;
-}
-#nav div:hover {
-  background-color: red;
-}
-#nav #icon {
+.icon {
   display: none;
 }
 
-@media screen and (max-width: 500px) {
-  body {
-    background-color: green;
-  }
+.navBar div {
+  float: left;
+  padding: 14px 16px;
+}
+.navBar div:hover {
+  background-color: green;
+}
 
-  #nav div:first-child {
-    width: 100%;
-    text-align: center;
-  }
-  #nav div:not(:first-child) {
+@media screen and (max-width: 800px) {
+  .navBar .section:not(:first-child) {
     display: none;
   }
-
-  #nav #icon {
-    position: absolute;
-    right: 9px;
-    bottom: 10px;
-    font-size: 20px;
-    color: white;
+  .navBar .icon {
     display: block;
-    cursor: pointer;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
   }
-
-  #nav.ract div {
-    width: 100%;
-    text-align: center;
+  .navBar.hidden .section {
     display: block;
+    width: 100%;
   }
 }

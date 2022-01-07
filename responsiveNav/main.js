@@ -1,8 +1,8 @@
-const nav = document.getElementById("nav");
-const icon = document.getElementById("icon");
+const icon = document.querySelector(".icon");
+const navBar = document.querySelector(".navBar");
 
 function handleClick() {
-  nav.classList.toggle("ract");
+  navBar.classList.toggle("hidden");
 }
 
 icon.addEventListener("click", handleClick);
