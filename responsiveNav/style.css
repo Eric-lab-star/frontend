@@ -1,40 +1,17 @@
 @import "reset.css";
-body {
-  background-color: black;
-  color: white;
-  width: 100%;
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
 }
 
-.navBar {
-  background-color: brown;
-  width: 100%;
-  position: fixed;
-  bottom: 0px;
-}
-.icon {
-  display: none;
-}
-
-.navBar div {
+/* Style the links inside the navigation bar */
+.topnav a {
   float: left;
-  padding: 14px 16px;
+  color: red;
 }
-.navBar div:hover {
-  background-color: green;
-}
-
-@media screen and (max-width: 800px) {
-  .navBar .section:not(:first-child) {
-    display: none;
-  }
-  .navBar .icon {
-    display: block;
-    position: fixed;
-    bottom: 0px;
-    right: 0px;
-  }
-  .navBar.hidden .section {
-    display: block;
-    width: 100%;
-  }
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
 }
